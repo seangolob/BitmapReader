@@ -25,4 +25,5 @@ module.exports = function transform(file) {
   }
 
   fs.writeFileSync('new.bmp', file);
+  return [pixelArray, newArray];
 };
